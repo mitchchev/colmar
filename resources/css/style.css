@@ -1,6 +1,6 @@
 html {
   font-size: 8px;
-  font-family: sans-serif;
+  font-family: "Unbuntu",sans-serif;
 }
 
 .show-mobile {
@@ -24,6 +24,9 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+p {
+  font-size: 1.75rem;
+}
 
 /* Header section */
 
@@ -42,6 +45,7 @@ strong {
   display: flex;
   align-items: center;
   margin-left: 3rem;
+  font-family: "Fira Sans", sans-serif;
 }
 .logo img {
   height: 5rem;
@@ -76,7 +80,7 @@ nav span:hover {
   align-items: center;
 }
 .banner-headline {
-  max-width: 35%;
+  max-width: 30%;
   height: 30rem;
   display: flex;
   justify-content: space-between;
@@ -90,46 +94,49 @@ nav span:hover {
   text-align: center;
   padding: 1rem 0;
   color: white;
+  font-weight: bold;
   transition: background-color .25s ease-out;
 }
 .button:hover {
-  background-color: #ff9900
+  background-color: #ff9900;
 }
 
 /* Info section */
 
-#info {
+.sixtyforty {
+  display: flex;
   flex-direction: row;
   max-height: 79.375rem;
 }
 
-.info-main {
+.sixtyforty-main {
   margin: 4rem 3rem;
   max-width: 60%;
   display: flex;
   flex-direction: column;
 }
-.info-main img {
+.sixtyforty-main img {
   max-width: 100%;
 }
-.info-main h1 {
+.sixtyforty-main h1 {
   margin: 4rem 0 3rem 0;
 }
-.info-main p {
+.sixtyforty-main p {
   margin: 1rem 0 1rem 0;
   font-size: 1.75rem;
+  line-height: 1.5;
   color: grey;
 }
-.info-sidebar {
+.sixtyforty-sidebar {
   max-width: 40%;
-  border-left: 1px solid grey;
+  border-left: 1px solid #e6e6e6;
   margin: 2rem 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
 
 }
-.info-sidebar img {
+.sidebar-card img {
   max-width: 35%;
   height: auto;
   margin: 2rem 2rem;
@@ -144,7 +151,6 @@ nav span:hover {
   max-width: 65%;
   flex-direction: column;
   justify-content: center;
-
 }
 .sidebar-text h3 {
   font-size:1.75rem;
@@ -157,4 +163,177 @@ nav span:hover {
 .featured-card {
   background-color: lightgrey;
   display: flex;
+}
+
+/* courses section */
+.courses-section {
+  background-color: #e6e6e6;
+  max-height: 106.25rem;
+}
+#courses {
+  align-items: center;
+}
+#courses h1 {
+  margin: 4rem 0;
+}
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 120rem;
+  margin: 0 5rem;
+}
+.course-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 0 2rem 4rem 2rem;
+  background-color: white;
+}
+
+.course-card img {
+  max-width: 100%;
+}
+.course-card h2 {
+  margin: 2rem 0 2rem 2rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.course-card h3 {
+  margin: 1rem 0 1rem 2rem;
+  color: #737373;
+  line-height: 1.5;
+}
+/* Thesis section */
+h1.thesis {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+.sixtyforty-main video {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 2rem 0;
+}
+/* Footer section */
+footer {
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  font-size: 1.75rem;
+  color: #737373
+}
+.footer {
+  display: flex;
+  margin: 2rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+
+}
+@media only screen and (max-width: 470px) {
+  .hide-mobile {
+    display: none;
+}
+  #hide-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: flex;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  .logo {
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+  }
+  #banner {
+    flex-direction: column;
+  }
+  .banner {
+    max-height: 100%;
+  }
+  .banner img {
+    margin: 0 0 3rem 0;
+    max-width: 100%;
+  }
+  .banner-headline {
+    max-width: 100%;
+    padding-bottom: 3rem;
+  }
+  .banner-headline h1,
+  .banner-headline h2 {
+    margin-left: 2rem;
+  }
+  .button {
+    margin: 0 auto;
+    padding: 1.5rem 30%;
+  }
+  .sixtyforty-sidebar {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-card {
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    padding-bottom: 2rem;
+    border: none;
+  }
+  .sidebar-card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .sidebar-text {
+    max-width: 100%;
+    margin-left: 2rem;
+  }
+  .sixtyforty {
+    max-height: 100%;
+  }
+  .featured-card {
+    background-color: inherit;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgrey;
+  }
+  #courses h1 {
+    margin-top: 1rem;
+  }
+  .courses-section {
+    background-color: white;
+    max-height: 100%;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 4rem;
+  }
+  .courses-container {
+    margin: 0;
+    flex-direction: column;
+    max-height: 100%;
+    width: 100%;
+  }
+  .course-card {
+    background-color: lightgrey;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    transition: background-color .2s linear;
+  }
+  .course-card h2 {
+    padding: 1.5rem 0;
+  }
+  .course-card:active {
+    background-color:#ff9900;
+    color: white;
+  }
+  .sixtyforty-main {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .sixtyforty-main video {
+    max-width: 100%;
+  }
+  footer p {
+    padding: 2rem 0;
+  }
+
 }
