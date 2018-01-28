@@ -132,19 +132,23 @@ nav span:hover {
   max-width: 40%;
   border-left: 1px solid #e6e6e6;
   margin: 2rem 0;
-  height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
 
 }
 .sidebar-card img {
-  max-width: 35%;
-  margin: 2rem 2rem;
+  max-width: 100%;
+
 }
 .sidebar-card {
   display: flex;
   border-bottom: 1px solid lightgrey;
   max-height: 23rem;
+}
+.img-container {
+  max-width: 35%;
+  margin: 2rem 2rem;
 }
 .sidebar-text {
   display: flex;
@@ -178,7 +182,7 @@ nav span:hover {
 }
 .courses-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   max-height: 120rem;
   margin: 0 5rem;
@@ -227,10 +231,25 @@ footer {
   justify-content: space-between;
 
 }
+
+  @media only screen and (max-width: 1024px) {
+    .hide-tablet {
+      display: none;
+    }
+    .banner h2 {
+      display: none;
+    }
+    .course-card {
+      text-align: center;
+    }
+}
 @media only screen and (max-width: 470px) {
   .hide-mobile {
     display: none;
 }
+  .banner h2 {
+    display: flex;
+  }
   #hide-mobile {
     display: none;
   }
@@ -280,9 +299,9 @@ footer {
     padding-bottom: 2rem;
     border: none;
   }
-  .sidebar-card img {
+  .img-container {
     max-width: 100%;
-    max-height: 100%;
+
   }
   .sidebar-text {
     max-width: 100%;
@@ -334,5 +353,4 @@ footer {
   footer p {
     padding: 2rem 0;
   }
-
 }
