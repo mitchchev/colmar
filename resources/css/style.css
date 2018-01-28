@@ -1,6 +1,6 @@
 html {
   font-size: 8px;
-  font-family: "Unbuntu",sans-serif;
+  font-family: "Heebo",sans-serif;
 }
 
 .show-mobile {
@@ -14,12 +14,13 @@ html {
 }
 
 h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  color: #1a1a1a;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #4d4d4d;
 }
 h2 {
   font-size: 3rem;
+  color: #4d4d4d;
 }
 h3 {
   font-size: 2rem;
@@ -89,7 +90,7 @@ nav span:hover {
 
 }
 .button {
-  background-color: #4D5656;
+  background-color: #4d4d4d;
   max-width: 75%;
   text-align: center;
   padding: 1rem 0;
@@ -138,7 +139,6 @@ nav span:hover {
 }
 .sidebar-card img {
   max-width: 35%;
-  height: auto;
   margin: 2rem 2rem;
 }
 .sidebar-card {
@@ -195,12 +195,11 @@ nav span:hover {
   max-width: 100%;
 }
 .course-card h2 {
-  margin: 2rem 0 2rem 2rem;
+  margin: 2rem 2rem;
   font-weight: bold;
-  color: #4d4d4d;
 }
 .course-card h3 {
-  margin: 1rem 0 1rem 2rem;
+  margin: 1rem 2rem;
   color: #737373;
   line-height: 1.5;
 }
