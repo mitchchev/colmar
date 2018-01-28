@@ -1,0 +1,160 @@
+html {
+  font-size: 8px;
+  font-family: sans-serif;
+}
+
+.show-mobile {
+  display: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+/* Header section */
+
+header {
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+strong {
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+.logo img {
+  height: 5rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 2rem;
+}
+nav span {
+  padding: 0 1rem;
+}
+nav span:hover {
+  text-shadow: 1px 1px 2px grey;
+}
+
+/* Banner section */
+.banner {
+  width: 100%;
+  background-color: lightgrey;
+  max-height: 74.5rem;
+}
+.banner img {
+  max-width: 60%;
+  margin: 4rem 3rem;
+}
+#banner {
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+.banner-headline {
+  max-width: 35%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: 1.2;
+
+}
+.button {
+  background-color: #4D5656;
+  max-width: 75%;
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+  transition: background-color .25s ease-out;
+}
+.button:hover {
+  background-color: #ff9900
+}
+
+/* Info section */
+
+#info {
+  flex-direction: row;
+  max-height: 79.375rem;
+}
+
+.info-main {
+  margin: 4rem 3rem;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.info-main img {
+  max-width: 100%;
+}
+.info-main h1 {
+  margin: 4rem 0 3rem 0;
+}
+.info-main p {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.75rem;
+  color: grey;
+}
+.info-sidebar {
+  max-width: 40%;
+  border-left: 1px solid grey;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+.info-sidebar img {
+  max-width: 35%;
+  height: auto;
+  margin: 2rem 2rem;
+}
+.sidebar-card {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  max-height: 23rem;
+}
+.sidebar-text {
+  display: flex;
+  max-width: 65%;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.sidebar-text h3 {
+  font-size:1.75rem;
+  margin: 1rem 0;
+  color: grey;
+}
+.sidebar-text a {
+  color: blue;
+}
+.featured-card {
+  background-color: lightgrey;
+  display: flex;
+}
